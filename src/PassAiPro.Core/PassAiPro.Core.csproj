@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>PassAiPro.Core</AssemblyName>
+    <RootNamespace>PassAiPro.Core</RootNamespace>
+  </PropertyGroup>
+</Project>

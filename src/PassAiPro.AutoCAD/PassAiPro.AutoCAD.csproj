@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>PassAiPro.AutoCAD</AssemblyName>
+    <RootNamespace>PassAiPro.AutoCAD</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PassAiPro.Core\PassAiPro.Core.csproj" />
+    <Reference Include="AcCoreMgd"><HintPath>$(AutoCADManagedRoot)\AcCoreMgd.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="AcMgd"><HintPath>$(AutoCADManagedRoot)\AcMgd.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="AcDbMgd"><HintPath>$(AutoCADManagedRoot)\AcDbMgd.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+  <Target Name="CheckHostReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(AutoCADManagedRoot)\AcCoreMgd.dll')" Text="AutoCAD 2024 managed references are required; see setup/build.ps1." />
+  </Target>
+</Project>

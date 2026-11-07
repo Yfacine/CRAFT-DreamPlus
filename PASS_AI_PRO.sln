@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassAiPro.Core", "src\PassAiPro.Core\PassAiPro.Core.csproj", "{94067B17-9CB9-4301-8889-D1DB21BE09B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassAiPro.AutoCAD", "src\PassAiPro.AutoCAD\PassAiPro.AutoCAD.csproj", "{35098832-D700-4F03-9FB8-25941A539B14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassAiPro.Tests", "tests\PassAiPro.Tests\PassAiPro.Tests.csproj", "{E7E5D333-C551-47CB-B10A-7A677D86B595}"
+EndProject
+Global
+  GlobalSection(SolutionConfigurationPlatforms) = preSolution
+    Debug|Any CPU = Debug|Any CPU
+    Release|Any CPU = Release|Any CPU
+  EndGlobalSection
+  GlobalSection(ProjectConfigurationPlatforms) = postSolution
+    {94067B17-9CB9-4301-8889-D1DB21BE09B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+    {94067B17-9CB9-4301-8889-D1DB21BE09B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+    {94067B17-9CB9-4301-8889-D1DB21BE09B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+    {94067B17-9CB9-4301-8889-D1DB21BE09B6}.Release|Any CPU.Build.0 = Release|Any CPU
+    {35098832-D700-4F03-9FB8-25941A539B14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+    {35098832-D700-4F03-9FB8-25941A539B14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+    {35098832-D700-4F03-9FB8-25941A539B14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+    {35098832-D700-4F03-9FB8-25941A539B14}.Release|Any CPU.Build.0 = Release|Any CPU
+    {E7E5D333-C551-47CB-B10A-7A677D86B595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+    {E7E5D333-C551-47CB-B10A-7A677D86B595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+    {E7E5D333-C551-47CB-B10A-7A677D86B595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+    {E7E5D333-C551-47CB-B10A-7A677D86B595}.Release|Any CPU.Build.0 = Release|Any CPU
+  EndGlobalSection
+EndGlobal

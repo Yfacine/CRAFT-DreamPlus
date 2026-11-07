@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="AutoCAD" Name="PASS_AI_PRO" AppVersion="@VERSION@" Description="PASS_AI_PRO diagnostic foundation" ProductCode="{637830B5-8C40-4990-AC58-B13A0EF71097}" UpgradeCode="{4E4058EB-8340-4A50-A26B-A1F4C18A95B3}">
+  <CompanyDetails Name="PASS_AI_PRO" />
+  <Components>
+    <RuntimeRequirements OS="Win64" Platform="AutoCAD" SeriesMin="R24.3" SeriesMax="R24.3" />
+    <ComponentEntry AppName="PASS_AI_PRO" ModuleName="./Contents/Windows/PassAiPro.AutoCAD.dll" AppDescription="PASS_AI_PRO diagnostics" LoadOnCommandInvocation="True">
+      <Commands GroupName="PASS_AI_PRO">
+        <Command Global="PASSAIPRO_ABOUT" Local="PASSAIPRO_ABOUT" />
+        <Command Global="PASSAIPRO_STATUS" Local="PASSAIPRO_STATUS" />
+      </Commands>
+    </ComponentEntry>
+  </Components>
+</ApplicationPackage>

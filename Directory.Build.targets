@@ -1,0 +1,7 @@
+<Project>
+  <Target Name="RequireSupportedBuildEntry" BeforeTargets="Restore;PrepareForBuild;_GenerateRestoreGraph">
+    <Error Condition="'$(PassAiProVersion)' == ''" Text="Use setup/build.ps1: version.json is the sole version source." />
+    <Error Condition="'$(PassAiProArtifactsRoot)' == ''" Text="Use setup/build.ps1: an isolated D test artifacts root is required." />
+    <Error Condition="!$([System.String]::Copy('$(PassAiProArtifactsRoot)').StartsWith('D:\PASS_AI\TEST\automated\pass-ai-pro-', System.StringComparison.OrdinalIgnoreCase))" Text="Build artifacts must remain inside the assigned D test workspace." />
+  </Target>
+</Project>
